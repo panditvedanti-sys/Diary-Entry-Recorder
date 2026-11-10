@@ -9,18 +9,14 @@
 </head>
 
 <body>
-
     <main class="container">
-
         <header>
             <h1>Study Session Recorder</h1>
             <p>Build consistency, one session at a time.</p>
         </header>
-
         <section id="character-setup" class="panel">
             <h2>Welcome!</h2>
-            <p>Let's get your study journey started.</p>
-
+            <p>Start your study journey here.</p>
             <label for="characterName">Enter your character's name:</label>
             <input type="text" id="characterName"
                    placeholder="Student">
@@ -41,33 +37,26 @@
                 <button onclick="startFocusBlock()">
                     Start a Focus Block
                 </button>
-
                 <button onclick="viewHistory()">
                     View Study History
                 </button>
-
                 <button onclick="checkStreak()">
                     Check Current Streak
                 </button>
-
                 <button class="secondary" onclick="exitApp()">
                     Exit
                 </button>
             </div>
-
         </section>
 
         <section id="focus-session" class="panel" hidden>
-
             <h2>Focus Session</h2>
-
             <div id="goal-entry">
                 <label for="goal">
                     What is your intention/goal for this session?
                 </label>
-
                 <input type="text" id="goal"
-                       placeholder="e.g. Complete physics homework">
+                       placeholder="e.g. Complete biology homework">
 
                 <button onclick="beginSession()">
                     Begin Focus Block
@@ -82,19 +71,14 @@
                 <div class="timer" id="timerDisplay">
                     25:00
                 </div>
-
                 <p id="timerStatus">Stay focused!</p>
-
                 <button onclick="finishFocusBlock()">
                     Finish Focus Session
                 </button>
-
             </div>
 
             <div id="reflection-section" hidden>
-
                 <h3>Session Reflection</h3>
-
                 <label for="reflection">
                     What did you accomplish? Reflect on one area you
                     were consistent on and one area for improvement.
@@ -103,56 +87,40 @@
                 <textarea id="reflection"
                           rows="5"
                           placeholder="Write your reflection here..."></textarea>
-
                 <button onclick="saveSession()">
                     Save Session
                 </button>
-
             </div>
 
             <button class="secondary back-button"
                     onclick="returnToMenu()">
                 Back to Menu
             </button>
-
         </section>
 
         <section id="study-history" class="panel" hidden>
-
             <h2>Your Study Logs History</h2>
-
             <div id="historyDisplay"></div>
-
             <button class="secondary"
                     onclick="returnToMenu()">
                 Back to Menu
             </button>
-
         </section>
 
         <section id="streak-display" class="panel" hidden>
-
             <h2>Your Current Streak</h2>
-
             <div class="streak-number" id="streakCount">0</div>
-
             <p>Consecutive days of completed study sessions!</p>
-
             <button class="secondary"
                     onclick="returnToMenu()">
                 Back to Menu
             </button>
-
         </section>
 
         <section id="exit-message" class="panel" hidden>
-
             <h2>Great Work!</h2>
-
             <p>Keep up the great work! See you next time!</p>
-
         </section>
-
     </main>
 
 </body>
